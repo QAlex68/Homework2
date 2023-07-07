@@ -26,7 +26,7 @@ do
         Console.WriteLine("Некорректный ввод. Пожалуйста, введите число от 1 до 7!");
     }
 }
-while (!isValidNumberDay || numberDay < 1 || numberDay > 7);
+while (!isValidNumberDay && numberDay < 1 && numberDay > 7);
 numberDay--;
 if (numberDay > 4) Console.WriteLine($"{daysOfWeek[numberDay]} является выходным днем!");
 else
